@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:selectable="false"
+        android:enabled="true"
+        android:key="why_have"
+        android:summary="You will have to select New Game from the main screen for your settings changes to take effect" />
+
+    <PreferenceCategory
+        android:title="@string/handi_title">
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/handicapping_labels"
+            android:entryValues="@array/handicapping_values"
+            android:key="handi_key"
+            android:summary="@string/handi_summary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/score_title">
+        <ListPreference
+            android:key="score_key"
+            android:summary="@string/score_summary"
+            android:entries="@array/win_keys"
+            android:entryValues="@array/win_values"
+            android:defaultValue="100"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/die_size_title">
+        <ListPreference
+            android:key="die_size_key"
+            android:summary="@string/die_size_summary"
+            android:entries="@array/die_size_keys"
+            android:entryValues="@array/die_size_values"
+            android:defaultValue="6"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/die_color_title"
+        android:key="die_color_category_key">
+        <CheckBoxPreference
+            android:key="die_color_checkbox_key"
+            android:summary="@string/die_color_summary"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

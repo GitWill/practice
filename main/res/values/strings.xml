@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">PigGame</string>
+
+    <string name="handi_title">Player one gets a point advantage</string>
+    <string name="handi_summary">Sets how many points player one starts with</string>
+
+    <string name="score_title">Choose winning score</string>
+    <string name="score_summary">Sets the winnning condition</string>
+
+    <string name="die_color_title">Change the color of the dice</string>
+    <string name="die_color_summary">Check the box to use blue dice</string>
+
+    <string name="die_size_title">Choose how many sides the dice will have</string>
+    <string name="die_size_summary">Sets the number of sides on the dice</string>
+
+    <string name="settings_name">Settings</string>
+    <string name="settings_activity_label">Settings activity label</string>
+    <string name="settings_title">Settings</string>
+    <string name="activity_main_pig">Settings</string>
+
+
+    <string name="about_activity_label">About activity label</string>
+
+
+    <string name="game_play_label">Game activity label</string>
+
+
+
+    <string name="first_activity_label">First activity label</string>
+
+    <string name="about">This version of the pig game will...</string>
+
+
+    <string name="menu_about">About</string>
+
+</resources>
