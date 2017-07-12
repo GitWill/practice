@@ -12,18 +12,18 @@ import android.util.Log;
 public class FirstActivity extends AppCompatActivity {
     public static final String WILLS = "willsComments";
 
-    private PigGame game;
+    //private PigGame game;
 
     public Context getContext(){ return this; }
 
-    public PigGame getGame(){ return game; }
+    //public PigGame getGame(){ return game; }
 
-    public void setGame(PigGame in){ this.game = in; }
+    //public void setGame(PigGame in){ this.game = in; }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(WILLS, "in oncreatview in second fragment");
+        //Log.d(WILLS, "in oncreatview in second fragment");
 
         // set the view layout for the activity using XML
         setContentView(R.layout.first_activity);

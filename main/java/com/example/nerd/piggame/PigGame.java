@@ -20,10 +20,7 @@ class PigGame extends AppCompatActivity {
         context = in;
     }
 
-    public void setNames(String p1, String p2){
-        player1.setName(p1);
-        player2.setName(p2);
-    }
+
 
     public void endGame(){                          //this method handles the end of the game for the back end
         String playerName;                          //this will store the name of the winning playert

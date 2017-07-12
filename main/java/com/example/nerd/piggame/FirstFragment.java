@@ -16,7 +16,7 @@ import android.widget.EditText;
  * Created by nerd on 7/10/2017.
  */
 
-public class FirstFragment extends Fragment  implements OnClickListener {
+public class FirstFragment extends Fragment  implements View.OnClickListener {
 
     public static final String WILLS = "dEfAuLt";
     private PigGame game;
@@ -34,7 +34,7 @@ public class FirstFragment extends Fragment  implements OnClickListener {
         //set this fragment to listen to the new game button
         Button newGameButton = (Button)view.findViewById(R.id.playButton);
         newGameButton.setOnClickListener(this);  // this class implements the listener
-        Log.d(WILLS, "in onActivityCreated in first frag");
+        //Log.d(WILLS, "in onActivityCreated in first frag");
 
         return view;
     }
@@ -59,11 +59,11 @@ public class FirstFragment extends Fragment  implements OnClickListener {
             //game = new RpsGame(computerHand, humanHand);
         }
         //else {
-            myContext = firstActivity.getContext();
-            game = new PigGame(myContext,firstName,secondName);
+            //myContext = firstActivity.getContext();
+            //game = new PigGame(myContext,firstName,secondName);
         //}
         // Give the host activity a reference to the game object
-        firstActivity.setGame(game);
+        //firstActivity.setGame(game);
 
         // Check to see if FirstActivity has loaded a single or dual pane layout
         twoPaneLayout = firstActivity.findViewById(R.id.second_fragment) != null;
