@@ -2,6 +2,7 @@ package com.example.nerd.piggame;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.Toast;
 
 /**
@@ -10,46 +11,34 @@ import android.widget.Toast;
 
     //the PigGame class will handle the back end of the game
 class PigGame extends AppCompatActivity {
+    private String playerOneName;
+    private String playerTwoName;
     PigPlayer player1;    //each game has two players
     PigPlayer player2;
-    Context context;                        //we need the context so we can toast the winner
+    private Context context;                        //we need the context so we can toast the winner
 
-    PigGame(Context in, String p1In, String P2In){                     //constructor takes in a context for toasting
-        player1 = new PigPlayer(p1In);    //each game has two players
-        player2 = new PigPlayer(P2In);
+    PigGame(Context in, String p1Name, String p2Name){                     //constructor takes in a context for toasting
+        playerOneName = p1Name;
+        playerTwoName = p2Name;
+        player1 = new PigPlayer(p1Name);    //each game has two players
+        player2 = new PigPlayer(p2Name);
         context = in;
     }
 
-
-
     public void endGame(){                          //this method handles the end of the game for the back end
-        String playerName;                          //this will store the name of the winning playert
+
         if (player1.getTotScore() > player2.getTotScore()){         //if player 1 won
-            if (player1.getName().equals("")){                      //get their name and toast them
-                playerName = "Player 1";
-            }else {
-                playerName = player1.getName();
-            }
-            Toast.makeText(context, playerName + " won the game", Toast.LENGTH_LONG).show();
+            //Toast.makeText(context, playerOneName + " won the game", Toast.LENGTH_LONG).show();
         }else if(player1.getTotScore() < player2.getTotScore()){    //else if player 2 won
-            if (player2.getName().equals("")){                      //get their name and toast them
-                playerName = "Player 2";
-            }else {
-                playerName = player2.getName();
-            }
-            Toast.makeText(context, playerName + " won the game", Toast.LENGTH_LONG).show();
+            //Toast.makeText(context, playerTwoName + " won the game", Toast.LENGTH_LONG).show();
         }else{                                                      //else its a tie
-            if (player2.getName().equals("")){                      //get player 2's name so you
-                playerName = "Player 2";                            //can shame them for quitting
-            }else {                                                 //they win 5/6 times if they rolled
-                playerName = player2.getName();
-            }
-            Toast.makeText(context, "Tie game... shame on "+ playerName, Toast.LENGTH_LONG).show();
+            //Toast.makeText(context, "Tie game... shame on "+ playerTwoName, Toast.LENGTH_LONG).show();
         }
         clearAll();
     }
 
     public void clearAll(){         //resets the backend instance vars
+        Log.d("WILL","clearAll");
         player1.setTotScore(0);
         player1.setTurnPoints(0);
         player2.setTotScore(0);
@@ -61,6 +50,7 @@ class PigGame extends AppCompatActivity {
         player1.setTotScore(player1.getTotScore() + player1.getTurnPoints());   //if a player has accumulated pts,
         player2.setTotScore(player2.getTotScore() + player2.getTurnPoints());   //give them their points
         if (PigPlayer.getIsTurn() == 2 && (player2.getTotScore() >= 19 || player1.getTotScore() >= 19)){  //if player 2 ends turn while either player has enough to win
+            Log.d("WILL","ONE");
             endGame();                                                          //then the game is over
         }else if (PigPlayer.getIsTurn() == 1){      //if it is player 1's turn
             player1.setTurnPoints(0);               //reset player 1's turn points
@@ -72,8 +62,7 @@ class PigGame extends AppCompatActivity {
     }
 
     public void handleRoll(int die){                //handle the back end actins for a roll of the die
-
-        if(PigPlayer.getIsTurn() == 2 && die ==1 && player1.getTotScore() >= 19)//if player 2 rolled a 1 while player 1 has 100+ points
+        if(PigPlayer.getIsTurn() == 2 && die == 1 && player1.getTotScore() >= 19)//if player 2 rolled a 1 while player 1 has 100+ points
             endGame();                              //then player one wins
         else if(die == 1) {                         //if the die is a 1
             if (PigPlayer.getIsTurn() == 1) {       //if it is player ones turn

@@ -11,7 +11,7 @@ public class PigPlayer {
     private static boolean isDouble = false;     //equals 1 when it's player ones turn, 2 when its player two's
     private String name = "";
 
-    public PigPlayer(String in){
+    public PigPlayer(String in){                //constructor creates players with names
         name = in;
     }
 
