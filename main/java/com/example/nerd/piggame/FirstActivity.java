@@ -16,6 +16,12 @@ public class FirstActivity extends AppCompatActivity {
 
     public Context getContext(){ return this; }
 
+    public void newPigBig(String first, String second){
+        SecondFragment gpf =
+                (SecondFragment) getFragmentManager().findFragmentById(R.id.second_fragment);
+        gpf.setNames(first,second);
+    }
+
     //public PigGame getGame(){ return game; }
 
     //public void setGame(PigGame in){ this.game = in; }

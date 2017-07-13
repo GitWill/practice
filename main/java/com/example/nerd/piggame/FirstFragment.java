@@ -19,7 +19,7 @@ import android.widget.EditText;
 public class FirstFragment extends Fragment  implements View.OnClickListener {
 
     public static final String WILLS = "dEfAuLt";
-    private PigGame game;
+    //private PigGame game;
     private boolean twoPaneLayout;
 
     private Context myContext;
@@ -77,14 +77,15 @@ public class FirstFragment extends Fragment  implements View.OnClickListener {
             String p2Name = p2nEditText.getText().toString();
             //game.setNames(p1Name,p2Name);
 
-           // if(twoPaneLayout){
-             //   game.setNames(p1Name,p2Name);
-            //}else{
+            if(twoPaneLayout){
+                firstActivity.newPigBig(p1Name,p2Name);
+                //game.setNames(p1Name,p2Name);
+            }else{
                 Intent intent = new Intent(getActivity(), SecondActivity.class);
                 intent.putExtra("p1Name", p1Name);  // send state to 2nd activity
                 intent.putExtra("p2Name", p2Name);  // send state to 2nd activity
                 startActivity(intent);
-            //}
+            }
         }
         //p1nEditText = (EditText) v.findViewById(R.id.p_1_edit_text);
         //p2nEditText = (EditText) v.findViewById(R.id.p_1_edit_text);

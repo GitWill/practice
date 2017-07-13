@@ -22,20 +22,20 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
     TextView Player2Name;
     String p1n;
     String p2n;
-    public Activity act;
+    Activity activity = getActivity();
+    PigGame myGame = new PigGame(activity, p1n,p2n);
 
     public void setNames(String playerOneName, String playerTwoName){//NEW
-        act = getActivity();
+        activity = getActivity();
         p1n = playerOneName;
         p2n = playerTwoName;
-        Player1Name = (TextView) act.findViewById(R.id.playerOneTextView);
-        Player2Name = (TextView) act.findViewById(R.id.playerTwoTextView);
+        Player1Name = (TextView) activity.findViewById(R.id.playerOneTextView);
+        Player2Name = (TextView) activity.findViewById(R.id.playerTwoTextView);
         Player1Name.setText(p1n);
         Player2Name.setText(p2n);
         //NEW PUT THEM INTO THE TEXT VIEW
     }
-    Activity activity = getActivity();
-    PigGame myGame = new PigGame(activity, p1n,p2n);
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -56,8 +56,9 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if(v.getId() == R.id.rollButton){
-            Toast.makeText(act, " roll button clicked", Toast.LENGTH_SHORT).show();
-            Toast.makeText(act, " end button clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(activity, " roll button clicked", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(activity, " end button clicked", Toast.LENGTH_SHORT).show();
         }
     }
 }
