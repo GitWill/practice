@@ -39,9 +39,11 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
     private ImageView dieImg;       //displays image for die
     private int myRandom;           //for the dice roll
     private Context passed;         //holds the first acctivity's context
+    //PigGame myGame;
 
-    PigGame myGame = new PigGame(passed,p1NameString,p2NameString);//create a piggame object
-
+    //public void startGame() {
+    PigGame myGame = new PigGame(passed, p1NameString, p2NameString);//create a piggame object
+    //}
 
     public void setContext(Context in){//first activities context
         passed = in;

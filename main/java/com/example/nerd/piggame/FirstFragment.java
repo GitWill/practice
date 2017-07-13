@@ -49,20 +49,6 @@ public class FirstFragment extends Fragment  implements View.OnClickListener {
         p1nEditText = (EditText) firstActivity.findViewById(R.id.playerOneEditText);
         p2nEditText = (EditText) firstActivity.findViewById(R.id.playerTwoEditText);
 
-        // Make a new game object, use saved state if it exists
-        if(savedInstanceState != null) {
-            // Restore saved state
-            //rpsEditText.setText(humanHand.toString());
-            //Hand computerHand = Hand.values()[savedInstanceState.getInt("computerHand", 0)];
-            //game = new RpsGame(computerHand, humanHand);
-        }
-        //else {
-            //myContext = firstActivity.getContext();
-            //game = new PigGame(myContext,firstName,secondName);
-        //}
-        // Give the host activity a reference to the game object
-        //firstActivity.setGame(game);
-
         // Check to see if FirstActivity has loaded a single or dual pane layout
         twoPaneLayout = firstActivity.findViewById(R.id.second_fragment) != null;
     }

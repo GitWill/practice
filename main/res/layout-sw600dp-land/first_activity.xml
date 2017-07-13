@@ -10,15 +10,15 @@
 
         <fragment
             android:id="@+id/first_fragment"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="283dp"
+            android:layout_height="456dp"
             android:name="com.example.nerd.piggame.FirstFragment"
-            tools:layout="@layout/first_fragment" />
+            tools:layout="@layout/first_fragment"
+            android:layout_weight="0.26" />
 
         <fragment
             android:id="@+id/second_fragment"
-            android:layout_weight="1"
+            android:layout_weight="0.53"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:name="com.example.nerd.piggame.SecondFragment"

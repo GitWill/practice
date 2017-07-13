@@ -6,10 +6,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-/**
- * Created by nerd on 7/10/2017.
- */
-
 public class FirstActivity extends AppCompatActivity {
 
     public void newPigBig(String first, String second){     //this is called when the screen is big enough for both fragments
@@ -17,6 +13,7 @@ public class FirstActivity extends AppCompatActivity {
                 (SecondFragment) getFragmentManager().findFragmentById(R.id.second_fragment);
         gpf.setContext(this);
         gpf.setNames(first,second);
+        //gpf.startGame();
     }
 
     @Override
