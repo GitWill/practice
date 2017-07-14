@@ -21,7 +21,8 @@
         android:layout_marginLeft="132dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="132dp" />
 
     <EditText
         android:id="@+id/playerTwoEditText"
@@ -33,22 +34,25 @@
         android:text=""
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
         app:layout_constraintTop_toBottomOf="@+id/playerOneEditText"
         android:layout_marginLeft="132dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="132dp" />
 
     <Button
         android:id="@+id/playButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="195dp"
+        android:layout_height="71dp"
+        android:textSize="25dp"
         android:text="New Game"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/instructions_text_view"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
     <TextView
         android:id="@+id/p_1_text_view"
@@ -59,7 +63,8 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="16dp" />
 
     <TextView
         android:id="@+id/p_2_text_view"
@@ -70,11 +75,12 @@
         android:layout_marginTop="15dp"
         app:layout_constraintTop_toBottomOf="@+id/p_1_text_view"
         android:layout_marginLeft="16dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="16dp" />
 
     <TextView
         android:id="@+id/instructions_text_view"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="15sp"
         android:text="You need 100 points to win. If you roll a 1, you lose your points. Player 2 always goes last"
@@ -84,5 +90,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="3dp"
         app:layout_constraintTop_toBottomOf="@+id/playerTwoEditText"
-        app:layout_constraintHorizontal_bias="0.576" />
+        app:layout_constraintHorizontal_bias="0.576"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 </android.support.constraint.ConstraintLayout>
