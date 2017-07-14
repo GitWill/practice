@@ -9,10 +9,11 @@ import android.util.Log;
 public class FirstActivity extends AppCompatActivity {
 
     public void newPigBig(String first, String second){     //this is called when the screen is big enough for both fragments
-        SecondFragment gpf =                                //it creates an instance of the second fragment in the first activity
+        SecondFragment secondFragment =                                //it creates an instance of the second fragment in the first activity
                 (SecondFragment) getFragmentManager().findFragmentById(R.id.second_fragment);
-        gpf.setContext(this);
-        gpf.setNames(first,second);
+        secondFragment.setContext(this);
+        secondFragment.setNames(first,second);
+        secondFragment.clearData();
         //gpf.startGame();
     }
 

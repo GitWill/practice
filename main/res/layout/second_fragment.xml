@@ -112,8 +112,8 @@
     <Button
         android:id="@+id/rollButton"
         android:maxLines="1"
-        android:layout_width="116dp"
-        android:layout_height="39dp"
+        android:layout_width="125dp"
+        android:layout_height="47dp"
         android:text="Roll die"
         android:onClick="rollDie"
         android:textSize="20sp"
@@ -121,13 +121,13 @@
         android:layout_marginTop="6dp"
         app:layout_constraintRight_toLeftOf="@+id/textView11"
         android:layout_marginRight="18dp"
-        tools:layout_editor_absoluteX="62dp" />
+        tools:layout_editor_absoluteX="233dp" />
 
     <Button
         android:id="@+id/endButton"
         android:maxLines="1"
-        android:layout_width="125dp"
-        android:layout_height="40dp"
+        android:layout_width="128dp"
+        android:layout_height="44dp"
         android:text="End turn"
         android:onClick="endTurn"
         android:textSize="20sp"

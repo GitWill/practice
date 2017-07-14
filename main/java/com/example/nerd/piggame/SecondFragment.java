@@ -49,6 +49,11 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
         passed = in;
     }
 
+    public void clearData(){
+        myGame.endGame();
+        updateUI();
+    }
+
     public void setNames(String playerOneName, String playerTwoName){//set names
         if (playerOneName.equals("")){
             playerOneName = "Playa 1";
