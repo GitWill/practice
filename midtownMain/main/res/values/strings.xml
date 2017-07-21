@@ -1,0 +1,71 @@
+<resources>
+    <string name="first_activity_label_manifest">MidTownMMA</string>
+    <string name="app_name">MidTownMMA</string>
+    <string name="main_button">Main Event</string>
+    <string name="co_main_button">Co-main Event</string>
+    <string name="logos_button">Logo</string>
+    <string name="booth_button">Booth</string>
+    <string name="winter">Winter</string>
+    <string name="spring">Spring</string>
+    <string name="summer">Summer</string>
+    <string name="fall">Fall</string>
+    <string name="select">Select a quarter to see the price</string>
+    <string name="pkg">Pick package to see get deets</string>
+    <string name="main_price">$3,000</string>
+    <string name="co_main_price">$2,000</string>
+    <string name="logo_price">$1,000</string>
+    <string name="booth_price">$500</string>
+    <string name="co_main">Select a package to see the deets</string>
+    <string name="logo">Select a package to see the deets</string>
+    <string name="booth">Select a package to see the deets</string>
+    <string name="second_activity_label_manifest">Midtown Throwdown</string>
+    <string name="winter_text_second_frag">Midtown winter Snowdown</string>
+    <string name="spring_text_second_frag">Midtown spring Growdown</string>
+    <string name="summer_text_second_frag">Midtown summer Slowdown</string>
+    <string name="fall_text_second_frag">Midtown fall Blowdown</string>
+    <string name="disclaimer_deets">*all packages include items included in the booth package</string>
+    <string name="bring_booth_deets">Set up a booth then...</string>
+
+    <string name="main_venu_deets">At the venue: your logo will be on the center of the floor, you will be sponsoring the main event, you can put full page inserts in the fight cards, instant replays on the big screen will be sponsored by you."</string>
+    <string name="main_ticket_deets">The main event package incudes eight first row tickets, 4 vendor passes, and 20 general admittance tickets.</string>
+    <string name="main_outside_deets">Outside of the venue: you will be seen on approximately 200 television commercials, and heard on approximately 150 radio commercials. </string>
+
+
+    <string name="co_main_venu_deets">At the venue: your logo will appear prominently in either one of the fighters corners (half of each fight sponsored by you), you will be sponsoring the co-main event, you can put half page inserts in the fight cards.</string>
+    <string name="co_main_ticket_deets">The co-main event package includes four first row tickets, 2 vendor passes, and 10 general admission tickets.</string>
+    <string name="co_main_outside_deets">Outside of the venue: you will be seen on approximately 200 television commercials, and heard on approximately 150 radio commercials.</string>
+
+
+    <string name="logo_venu_deets">At the venue: your logo will be seen on the cage panels facing the fighters and the crowd, you will have one logo on the floor, you will have a sponsored seating section, you can do a give away.</string>
+    <string name="logo_ticket_deets">The logo package in cludes two second row tickets, two vendor passes, and five general admission tickets.</string>
+    <string name="logo_outside_deets">Outside of the venue: your logo will be seen in future productions, fight cards, posters, fliers, and more.</string>
+
+
+    <string name="booth_venu_deets">At the venue: you can set up a booth, hang banners/posters etc., sponsor a single fight, get access to the microphone for one minute, your company logo will be seen in the big screen slide show.</string>
+    <string name="booth_ticket_deets">The booth package includes two second row tickets, two vendor passes, and five general admittance tickets.</string>
+    <string name="booth_outside_deets">Outside of the venue: your logo will be seen on our fliers (4,000), posters (500), and social media (10,000+ followers). WE BRING YOU BUSINESS.</string>
+
+    <string name="main_price_winter">$3,000</string>
+    <string name="co_main_price_winter">$2,000</string>
+    <string name="logo_price_winter">$1,000</string>
+    <string name="booth_price_winter">$500</string>
+
+
+    <string name="main_price_spring">$5,000</string>
+    <string name="co_main_price_spring">$3,000</string>
+    <string name="logo_price_spring">$2,000</string>
+    <string name="booth_price_spring">$500</string>
+
+
+    <string name="main_price_summer">$4,000</string>
+    <string name="co_main_price_summer">$2,500</string>
+    <string name="logo_price_summer">$1,500</string>
+    <string name="booth_price_summer">$500</string>
+
+
+    <string name="main_price_fall">$6,000</string>
+    <string name="co_main_price_fall">$3,500</string>
+    <string name="logo_price_fall">$2,500</string>
+    <string name="booth_price_fall">$500</string>
+
+</resources>
